@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel= "stylesheet" href= "styles.css">
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+</head>
+    
+<body>
+  
+    <div class="container">
+        <div class="container-content">
+            <div class="text-entry">
+                <h1 style="padding: 10px;text-align: center;">TEXT BOX</h1>
+                <form action="/submit"  method="GET" name="text">
+                    <textarea  name="areatxt" id='output' rows="7" placeholder="Type or Paste your text here ... ">
+                </textarea>
+                </form>
+                <button type="button" id="process-btn">Analyse</button>
+                <button type="button" id="correct-btn">Correct it</button>
+                <input type="button" value="Clear" id="clear">
+            </div>
+        </div>
+        <div class="text-info">
+            <h1 style="padding: 20px;text-align: center;">ANALSIS RESULT</h2>
+                <ul class="text-info-list">
+                    <li>
+                        <p>Character Count : </p>
+                        <span id="char"></span>
+
+                    </li>
+                    <li>
+                        <p>Word Count : </p>
+                        <span id="word"></span>
+
+                    </li>
+                    <li>
+                        <p>Sentences : </p>
+                        <span id="sentence"></span>
+                    </li>
+                    <li>
+                        <p>Spaces : </p>
+                        <span id="spaces"></span>
+
+                    </li>
+                    <li>
+                        <p>Punctuations : </p>
+                        <span id="punctuation"></span>
+                    </li>
+                    <li>
+                        <p id="grammatical">Grammatical Errors:</p>
+                        <span id="gramma"  >
+                           
+                           
+                           
+                        </span>
+                    
+                    </li>
+                    <li>
+                        <p id="sentianal">Sentiment :</p>
+                        <span id="Sentiment"  >
+                           
+                           
+                           
+                        </span>
+                    
+                    </li>
+
+                </ul>
+
+        </div>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="application.js"> </script>
+</body>
+
+</html>
